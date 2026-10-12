@@ -1,0 +1,404 @@
+<header class="navbar">
+  <div class="container navbar-content">
+
+    <a class="logo" href="#">
+      Alejandro <span> Sánchez</span>
+    </a>
+
+    <nav>
+
+      <a href="#projects">
+        {{ t.nav.projects }}
+      </a>
+
+      <a href="#about">
+        {{ t.nav.about }}
+      </a>
+
+      <a href="#contact">
+        {{ t.nav.contact }}
+      </a>
+
+      <a
+        href="https://github.com/alexsg002"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <button
+        class="language-switch"
+        type="button"
+        (click)="changeLanguage()"
+      >
+        {{ t.nav.language }}
+      </button>
+
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <p class="eyebrow">
+        {{ t.hero.eyebrow }}
+      </p>
+
+      <h1>
+        {{ t.hero.titleStart }}<br />
+        <span>{{ t.hero.titleEnd }}</span>
+      </h1>
+
+      <p class="hero-description">
+        {{ t.hero.description }}
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          class="button primary"
+          href="#projects"
+        >
+          {{ t.hero.projectsButton }}
+        </a>
+
+        <a
+          class="button secondary"
+          href="https://github.com/alexsg002"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ t.hero.githubButton }}
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TECH STACK -->
+
+  <section class="stack">
+
+    <div class="container">
+
+      <p class="section-label">
+        {{ t.stack.title }}
+      </p>
+
+      <div class="technologies">
+
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Angular</span>
+        <span>MySQL</span>
+        <span>TypeScript</span>
+        <span>Docker</span>
+        <span>Maven</span>
+        <span>JUnit 5</span>
+        <span>Mockito</span>
+        <span>Kafka</span>
+        <span>AWS</span>
+        <span>Git</span>
+        <span>Firebase</span>
+        <span>Android Studio</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+
+  <section
+    id="projects"
+    class="projects"
+  >
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <p class="section-label">
+          {{ t.projects.label }}
+        </p>
+
+        <h2>
+          {{ t.projects.title }}
+        </h2>
+
+        <p>
+          {{ t.projects.description }}
+        </p>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <!-- MEETING BOOKING -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <div class="project-icon">
+              MB
+            </div>
+
+            <a
+              href="https://github.com/AlexSG002/meeting_room_booking"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              ↗
+            </a>
+
+          </div>
+
+          <h3>
+            {{ t.projects.meetingBooking.title }}
+          </h3>
+
+          <p>
+            {{ t.projects.meetingBooking.description }}
+          </p>
+
+          <div class="tags">
+
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Angular</span>
+            <span>MySQL</span>
+            <span>Kafka</span>
+            <span>Flyway</span>
+            <span>JUnit 5</span>
+            <span>Mockito</span>
+            <span>Docker Compose</span>
+
+
+          </div>
+
+        </article>
+
+        <!-- GESTIENER CRM -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <div class="project-icon">
+              MB
+            </div>
+
+
+          </div>
+
+          <h3>
+            {{ t.projects.gestienerCRM.title }}
+          </h3>
+
+          <h4>
+            {{ t.projects.gestienerCRM.details }}
+          </h4>
+
+          <p>
+            {{ t.projects.gestienerCRM.description }}
+          </p>
+
+          <div class="tags">
+
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Spring Security</span>
+            <span>Angular</span>
+            <span>MySQL</span>
+
+          </div>
+
+        </article>
+
+        <!-- GAMELOG TFG -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <div class="project-icon">
+              GL
+            </div>
+
+            <a
+              href="https://github.com/AlexSG002/GameLog_TFG"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              ↗
+            </a>
+
+          </div>
+
+          <h3>
+            {{ t.projects.gameLog.title }}
+          </h3>
+
+          <p>
+            {{ t.projects.gameLog.description }}
+          </p>
+
+          <div class="tags">
+
+            <span>Java</span>
+            <span>Android Studio</span>
+            <span>Firebase</span>
+            <span>RestAPIs</span>
+
+          </div>
+
+        </article>
+
+
+        <!-- Deitta Technical Assesment -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <div class="project-icon">
+              DE
+            </div>
+
+            <a
+              href="https://github.com/AlexSG002/prueba_tecnica"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              ↗
+            </a>
+
+          </div>
+
+          <h3>
+            {{ t.projects.deittaCRUD.title }}
+          </h3>
+
+          <p>
+            {{ t.projects.deittaCRUD.description }}
+          </p>
+
+          <div class="tags">
+
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Flyway</span>
+            <span>MySQL</span>
+            <span>JUnit 5</span>
+            <span>Mockito</span>
+            <span>Docker Compose</span>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section
+    id="about"
+    class="about"
+  >
+
+    <div class="container about-content">
+
+      <div>
+
+        <p class="section-label">
+          {{ t.about.label }}
+        </p>
+
+        <h2>
+          {{ t.about.title }}
+        </h2>
+
+      </div>
+
+
+      <div class="about-text">
+
+        <p>
+          {{ t.about.paragraph1 }}
+        </p>
+
+        <p>
+          {{ t.about.paragraph2 }}
+        </p>
+
+        <a
+          class="text-link"
+          href="https://github.com/alexsg002"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ t.about.github }}
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer
+  id="contact"
+  class="contact">
+
+  <div class="container footer-content">
+
+    <span>
+      © 2026 Alejandro Sánchez Gil
+    </span>
+
+    <span>
+      alejandrosanchezgil7@gmail.com
+    </span>
+
+    <div>
+
+      <a
+        href="https://github.com/alexsg002"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
