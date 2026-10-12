@@ -27,15 +27,30 @@
         GitHub
       </a>
 
-      <button
-        class="language-switch"
-        type="button"
-        (click)="changeLanguage()"
-      >
-        {{ t.nav.language }}
-      </button>
-
     </nav>
+
+    <button
+      class="language-switch"
+      type="button"
+      (click)="changeLanguage()"
+      [attr.aria-label]="language() === 'es' ? 'Switch to English' : 'Cambiar a español'"
+    >
+      @if (language() === 'es') {
+      <img
+        src="images/uk.svg"
+        alt=""
+        class="language-flag"
+      />
+      <span>EN</span>
+      } @else {
+      <img
+        src="images/spain.svg"
+        alt=""
+        class="language-flag"
+      />
+      <span>ES</span>
+      }
+    </button>
   </div>
 </header>
 
@@ -156,7 +171,7 @@
           <div class="project-top">
 
             <div class="project-icon">
-              MB
+              <img src="images/meetingBooking.svg" alt="Meeting Booking" />
             </div>
 
             <a
@@ -190,8 +205,9 @@
             <span>Mockito</span>
             <span>Docker Compose</span>
 
-
           </div>
+
+          <img class="screenshot" src="images/meetingBooking.png" alt="Captura de pantalla de Meeting Booking">
 
         </article>
 
@@ -202,7 +218,7 @@
           <div class="project-top">
 
             <div class="project-icon">
-              MB
+              <img src="images/gestienerCRM.svg" alt="Gestiener CRM" />
             </div>
 
 
@@ -239,7 +255,7 @@
           <div class="project-top">
 
             <div class="project-icon">
-              GL
+              <img src="images/gamelog.webp" alt="GameLog" />
             </div>
 
             <a
@@ -280,7 +296,7 @@
           <div class="project-top">
 
             <div class="project-icon">
-              DE
+              <img src="images/deittaCrud.svg" alt="Deitta Technical Assessment" />
             </div>
 
             <a

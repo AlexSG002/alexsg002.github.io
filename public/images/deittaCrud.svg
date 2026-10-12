@@ -1,0 +1,14 @@
+<svg viewBox="0 0 48 48" fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="24" cy="12" rx="15" ry="6"
+             stroke="#A78BFA" stroke-width="2.5"/>
+    <path d="M9 12V34C9 37.5 15.7 41 24 41
+             S39 37.5 39 34V12"
+          stroke="#A78BFA" stroke-width="2.5"/>
+    <path d="M9 23C9 26.5 15.7 30 24 30
+             S39 26.5 39 23"
+          stroke="white" stroke-width="2.5"/>
+    <path d="M9 33C9 36 15.7 39 24 39"
+          stroke="white" stroke-width="2"
+          stroke-linecap="round"/>
+</svg>
